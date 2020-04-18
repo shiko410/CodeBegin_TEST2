@@ -1,0 +1,14 @@
+.header {
+    background: red;
+}
+.main {
+    background:blue;
+    float: left;
+    width: 70%;
+}
+.side {
+    background: green;
+}
+.footer {
+    background: pink;
+}
