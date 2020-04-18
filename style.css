@@ -4,20 +4,209 @@ h1, h2, h3, ul, li {
     margin: 0;
     padding: 0;
     font-weight: normal;
+    font-size: 1rem;
 }
 /* オリジナルCSS */
 body {
     font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    margin: 0;
     color: #666;
+    background-color: #ddd;
 }
+.container{
+    background-color: #fff;
+    max-width: 1400px;
+    margin: 0 auto;
+    box-shadow: 0px 0 10px 4px #aaa;
+}
+a {
+    color: #333;
+}
+a:hover {
+    text-decoration: none;
+    color: blue;
+}
+.red {
+    color: red;
+}
+.bold {
+    font-weight: bold;
+}
+/* ----- ヘッダー ----- */
 .header {
+    border-top: 5px solid blue;
 }
+header .logo img {
+    height: 25px;
+    width: auto;
+    margin: 40px 50px;
+}
+.top-img {
+    margin: 0 auto;
+}
+.top-img img{
+    max-width: 1400px;
+    /* margin: 0 auto; */
+}
+/* ----- ナビ ----- */
+nav {
+    text-align: center;
+}
+nav ul {
+    max-width: 1400px;
+}
+nav ul a[href="#"] > li {
+    background-color: #E6EBFA;
+}
+nav ul a li {
+    list-style: none;
+    display: inline-block;
+    width: 16.52%;
+    border: 1px solid #ccc;
+    color:#333;
+    line-height: 1;
+    padding: 15px 0;
+}
+nav li:hover {
+    background-color: #E6EBFA;
+    color:blue;
+}
+nav a li span {
+    color: #ccc;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 2;
+}
+nav a li::before {
+    /* content: "s";
+    position: relative;
+    height: 100%;
+    width: 5px;
+    background: #000;
+    left: 0px;
+    right: 0px; */
+}
+/* ----- main ----- */
 .main {
     float: left;
     width: 70%;
+    padding: 0 40px;
+    padding-top: 30px;
 }
+section {
+    margin-bottom: 80px;
+}
+h2 {
+    background: blue;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+}
+.main ul {
+    margin: 20px 0;
+}
+.main ul li {
+    margin: 10px;
+    list-style: none;
+    line-height: 1.2;
+    border-bottom: 1px solid #ccc;
+    padding:8px 0;
+    margin: 0 20px;
+}
+.date {
+    color: blue;
+    padding-right:25px;
+}
+.main .new {
+    background: red;
+    color: #fff;
+    border-radius: 2px;
+    font-size: 12px;
+    padding: 2px;
+}
+.main .log {
+    text-align: right;
+    padding: 0px 20px 0px 40px;
+}
+h3 {
+    margin: 20px 0 10px;
+    padding: 10px;
+    color: #444;
+    background-color: #eee;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+}
+p {
+    margin: 5px 0 0 20px;
+    line-height: 2;
+}
+/* ----- side ----- */
 .side {
+    float: right;
+    margin-right: 45px;
 }
+.side ul {
+    background: #eee;
+    padding: 4px;
+    margin: 30px 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+.side ul li {
+    margin: 10px;
+    padding: 5px 10px 5px;
+    list-style: none;
+    background: #eee;
+    border-bottom: 1px solid #ddd;
+}
+.side ul li:first-of-type {
+    background: #ddd;
+    border-top: 6px solid blue;
+    padding: 20px 10px;
+}
+.side ul:nth-child(2n) {
+    background: #fff;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+.side ul:nth-child(2n) li {
+    width: 97%;
+}
+.side ul:nth-child(2n) li:nth-child(1n+2) {
+    background: #fff;
+}
+.side ul li div {
+    font-size: 10px;
+    padding-bottom: 5px;
+}
+.side ul li div img {
+    float: left;
+    font-size: 10px;
+    padding: 0 5px;
+}
+.side ul li div span {
+    color: blue;
+}
+
+/* -----フッタ ------ */
 .footer {
     clear: both;
+}
+footer {
+    padding: 15px 0;
+    text-align: center;
+    font-size: 13px;
+    line-height: 2;
+    background: blue;
+    color: #fff;
+}
+footer a {
+    color: #fff;
+    margin: 10px;
+    text-decoration: none;
+}
+.footer-under {
+    font-size: 12px;
 }
