@@ -1,14 +1,23 @@
+@charset "utf-8";
+/* リセットCSS */
+h1, h2, h3, ul, li {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+/* オリジナルCSS */
+body {
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    color: #666;
+}
 .header {
-    background: red;
 }
 .main {
-    background:blue;
     float: left;
     width: 70%;
 }
 .side {
-    background: green;
 }
 .footer {
-    background: pink;
+    clear: both;
 }
